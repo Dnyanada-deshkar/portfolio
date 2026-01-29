@@ -3,60 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        li{
-            font-size: 30px;
-            li{
-                font-size: 20px;
-            }
-        }
-        p{
-            font-size: large;
-        }
-    </style>
+    <title>Dnyanada Deshkar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Portfolio of Dnyanada Deshkar - Full Stack Web Developer (Java, Spring Boot, Oracle SQL). Projects, skills, services, and contact." />
 </head>
 <body>
-    <img src="myPhoto.jpg" alt="myPhoto" height="200px">
-    <h1>Dnyanada Deshkar</h1>
-    <hr>
-    <h1>Bio : </h1>
-    <ul>
-        <li> Skills: <ol>
-            <li>Oracle SQL</li>
-            <li>Java</li>
-            <li>HTML CSS JS</li>
-           
-        </ol> </li>
 
-        <br>
+    <a class="skip-link" href="#home">Skip to content</a>
 
-        <li> About: </li>
-        <p>
-        I'm a final-year B.Tech student majoring in Computer Science, with a strong foundation in Java, Spring Boot, and Oracle SQL. I’m passionate about backend development and database systems. 
-        Beyond academics, I’ve actively contributed to the National Service Scheme (NSS), where I honed my event management and coordination skills. From planning awareness drives to organizing campus-wide
-        initiatives, I’ve learned how to lead with clarity, adapt under pressure, and collaborate across diverse teams.
-        With a positive outlook, effective communication, and a drive to grow, I’m eager to contribute to impactful projects and thrive in a collaborative tech environment.
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <a class="logo" href="#home">Dnyanada Deshkar</a>
 
-        </p>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
 
-        <li>Contact: </li>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link nav-cta" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <br>
-
-        <div>
-            +91 9322335073
-            <br>
-            dnyanadadeshkar@gmail.com
-            <br>
-            <a href="https://www.linkedin.com/in/dnyanada-deshkar-9128ba29a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a>
+        <div class="scroll-progress" aria-hidden="true">
+            <div class="scroll-progress-bar" id="scrollProgressBar"></div>
         </div>
+    </header>
 
+    <main>
+        <!-- HERO -->
+        <section class="section hero" id="home" aria-label="Home">
+            <div class="container hero-container">
+                <div class="hero-content" data-reveal="fade-up">
+                    <p class="eyebrow">Full Stack Developer • Java • Spring Boot • Oracle SQL</p>
+                    <h1>
+                        Hey, I’m <span class="accent">Dnyanada</span> —
+                        Full Stack Web Developer
+                    </h1>
+                    <p class="lead">
+                        Final-year B.Tech Computer Science student experienced in Java and Spring Boot development with strong database
+                        management skills using Oracle SQL. A proactive communicator who explains technical concepts clearly and
+                        works effectively in collaborative environments.
+                    </p>
 
-    </ul>
+                    <div class="cta-row" data-reveal="fade-up" data-reveal-delay="120">
+                        <a class="btn btn-primary" href="#projects">
+                            View Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a class="btn btn-secondary" href="FullStack Resume Final Dnyanada.pdf" download="Dnyanada_Deshkar_CV.pdf">
+                            Download CV
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a class="btn btn-ghost" href="#contact">
+                            Contact Me
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
 
-    
+                    <div class="social-icons" aria-label="Social profiles" data-reveal="fade-up" data-reveal-delay="180">
+                        <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dnyanada-deshkar/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <button class="scroll-down" type="button" data-scroll="#about" aria-label="Scroll down to About">
+                        <span class="scroll-down-dot" aria-hidden="true"></span>
+                        <span class="scroll-down-text">Scroll</span>
+                    </button>
+                </div>
+                <div class="hero-visual hero-photo-right" data-reveal="fade-in">
+                    <div class="blob-shape" aria-hidden="true">
+                        <img src="image.jpeg" alt="Portrait of Dnyanada" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about" aria-label="About">
+            <div class="container">
+                <div class="section-head" data-reveal="fade-up">
+                    <h2>About</h2>
+                    <p>What I do, what I care about, and how I work.</p>
+                </div>
+
+                <div class="grid two-col">
+                    <div class="card" data-reveal="fade-up">
+                        <h3>Quick intro</h3>
+                        <p>
+                            I enjoy building reliable, user-friendly web apps end-to-end—from clean backend APIs in Spring Boot to
+                            responsive, accessible UIs. I’m especially interested in solving real problems with simple, maintainable solutions.
+                        </p>
+                        <div class="pill-row">
+                            <span class="pill"><i class="fa-solid fa-check"></i> Backend APIs</span>
+                            <span class="pill"><i class="fa-solid fa-check"></i> Databases</span>
+                            <span class="pill"><i class="fa-solid fa-check"></i> Frontend</span>
+                            <span class="pill"><i class="fa-solid fa-check"></i> Deployment</span>
+                        </div>
+                    </div>
+
+                    <div class="stats" data-reveal="fade-up" data-reveal-delay="120">
+                        <div class="stat">
+                            <div class="stat-value" data-count="10">0</div>
+                            <div class="stat-label">Projects built</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" data-count="3">0</div>
+                            <div class="stat-label">Core stacks</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" data-count="100">0</div>
+                            <div class="stat-label">Commitment</div>
+                        </div>
+                        <div class="card subtle">
+                            <h4>Currently learning</h4>
+                            <p>System design basics, authentication patterns, and performance optimization.</p>
+                            <a class="text-link" href="#skills">Explore my skills <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section alt" id="skills" aria-label="Skills">
+            <div class="container">
+                <div class="section-head" data-reveal="fade-up">
+                    <h2>Skills</h2>
+                    <p>Tech I use to ship full-stack projects.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card" data-reveal="fade-up">
+                        <i class="fa-brands fa-java"></i>
+                        <h3>Java</h3>
+                        <p>OOP, collections, clean architecture, problem solving.</p>
+                        <button class="chip" type="button" data-toast="Java: strong fundamentals and backend focus.">Learn more</button>
+                    </div>
+
+                    <div class="skill-card" data-reveal="fade-up" data-reveal-delay="60">
+                        <i class="fa-solid fa-leaf"></i>
+                        <h3>Spring Boot</h3>
+                        <p>REST APIs, validation, security basics, layered design.</p>
+                        <button class="chip" type="button" data-toast="Spring Boot: REST APIs, services, repositories.">Learn more</button>
+                    </div>
+
+                    <div class="skill-card" data-reveal="fade-up" data-reveal-delay="120">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Oracle SQL</h3>
+                        <p>Schema design, joins, indexing basics, query optimization.</p>
+                        <button class="chip" type="button" data-toast="SQL: designing tables and writing performant queries.">Learn more</button>
+                    </div>
+
+                    <div class="skill-card skill-card-more" data-reveal="fade-up">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Semantic structure, accessibility, SEO-friendly markup.</p>
+                        <button class="chip" type="button" data-toast="HTML: semantic + accessible components.">Learn more</button>
+                    </div>
+
+                    <div class="skill-card skill-card-more" data-reveal="fade-up" data-reveal-delay="60">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Responsive layouts, animations, modern UI systems.</p>
+                        <button class="chip" type="button" data-toast="CSS: responsive design and animation polish.">Learn more</button>
+                    </div>
+
+                    <div class="skill-card skill-card-more" data-reveal="fade-up" data-reveal-delay="120">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>DOM, animations, state, API integrations.</p>
+                        <button class="chip" type="button" data-toast="JavaScript: interactive UI and API work.">Learn more</button>
+                    </div>
+                </div>
+                <div class="skills-show-more-wrap" data-reveal="fade-up">
+                    <button class="btn btn-secondary btn-show-more" type="button" id="showMoreSkills" aria-expanded="false">
+                        Show more
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects" aria-label="Projects">
+            <div class="container">
+                <div class="section-head" data-reveal="fade-up">
+                    <h2>Projects</h2>
+                    <p>Some things I’ve built (replace links with your real ones).</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal="fade-up">
+                        <div class="project-meta">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">REST</span>
+                            <span class="tag">Oracle SQL</span>
+                        </div>
+                        <h3>Student Result Management</h3>
+                        <p>Backend-driven app to manage results, users, and reports with clean API design.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-primary" href="#" role="button">Live</a>
+                            <a class="btn btn-small btn-secondary" href="https://github.com/" target="_blank" rel="noreferrer">Code</a>
+                            <button class="btn btn-small btn-ghost" type="button" data-toast="Tip: replace Live/Code links with your project URLs.">Details</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="fade-up" data-reveal-delay="60">
+                        <div class="project-meta">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Animations</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p>This site: smooth scrolling, reveal animations, active nav, and modern UI.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-primary" href="#home">Live</a>
+                            <a class="btn btn-small btn-secondary" href="https://github.com/" target="_blank" rel="noreferrer">Code</a>
+                            <button class="btn btn-small btn-ghost" type="button" data-scroll="#contact">Contact</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="fade-up" data-reveal-delay="120">
+                        <div class="project-meta">
+                            <span class="tag">Java</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">CRUD</span>
+                        </div>
+                        <h3>Task Tracker API</h3>
+                        <p>CRUD API with validation and layered architecture ready for a UI client.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-primary" href="#" role="button">Live</a>
+                            <a class="btn btn-small btn-secondary" href="https://github.com/" target="_blank" rel="noreferrer">Code</a>
+                            <button class="btn btn-small btn-ghost" type="button" data-toast="Add screenshots later for extra impact.">Details</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section alt" id="services" aria-label="Services">
+            <div class="container">
+                <div class="section-head" data-reveal="fade-up">
+                    <h2>Services</h2>
+                    <p>How I can help you.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-reveal="fade-up">
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Web Development</h3>
+                        <p>Full-stack web applications from backend APIs to responsive, user-friendly frontends.</p>
+                        <a class="text-link" href="#projects">See my work <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-reveal="fade-up" data-reveal-delay="60">
+                        <i class="fa-solid fa-sitemap"></i>
+                        <h3>Backend APIs</h3>
+                        <p>REST APIs with Spring Boot, validation, and clean architecture.</p>
+                        <a class="text-link" href="#contact">Discuss API work <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-reveal="fade-up" data-reveal-delay="120">
+                        <i class="fa-solid fa-window-maximize"></i>
+                        <h3>Frontend UI</h3>
+                        <p>Responsive UI with smooth interactions and accessibility-friendly markup.</p>
+                        <a class="text-link" href="#projects">See UI work <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-reveal="fade-up" data-reveal-delay="180">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Database Design</h3>
+                        <p>Schema design, joins, constraints, and query improvements.</p>
+                        <a class="text-link" href="#contact">Talk databases <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="display:none" aria-hidden="true"><!-- BLOGS REMOVED -->
+                    <p>Short notes on what I’m learning (replace with your real posts).</p>
+                </div>
+
+                <div class="blogs-grid" style="display:none">
+                    <article class="blog-card" data-reveal="fade-up" style="display:none">
+                        <div class="blog-date">Jan 2026</div>
+                        <h3>Building REST APIs that scale</h3>
+                        <p>Patterns for controllers/services, validation, and error handling.</p>
+                        <button class="btn btn-small btn-secondary" type="button" data-toast="Add your blog links here (Medium/Dev.to/Hashnode).">
+                            Read
+                        </button>
+                    </article>
+
+                    <article class="blog-card" data-reveal="fade-up" data-reveal-delay="60">
+                        <div class="blog-date">Jan 2026</div>
+                        <h3>SQL tips for cleaner queries</h3>
+                        <p>Joins, indexes, and small habits that improve performance.</p>
+                        <button class="btn btn-small btn-secondary" type="button" data-toast="You can link this card to a real post later.">
+                            Read
+                        </button>
+                    </article>
+
+                    <article class="blog-card" data-reveal="fade-up" data-reveal-delay="120">
+                        <div class="blog-date">Jan 2026</div>
+                        <h3>Frontend polish: animations & UX</h3>
+                        <p>Subtle motion, loading states, and interaction feedback.</p>
+                        <button class="btn btn-small btn-secondary" type="button" data-toast="Want a blog section that pulls posts from JSON? I can add it.">
+                            Read
+                        </button>
+                    </article>
+                </div>
+            </div></div>
+
+        <!-- CONTACT -->
+        <section class="section alt" id="contact" aria-label="Contact">
+            <div class="container">
+                <div class="section-head" data-reveal="fade-up">
+                    <h2>Contact</h2>
+                    <p>Have a project in mind? Let’s talk.</p>
+                </div>
+
+                <div class="contact-cards" data-reveal="fade-up">
+                    <a class="contact-card" href="mailto:your.email@example.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <div class="contact-title">Email</div>
+                            <div class="contact-value">your.email@example.com</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/dnyanada-deshkar/" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <div class="contact-title">LinkedIn</div>
+                            <div class="contact-value">Connect with me</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://github.com/" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <div class="contact-title">GitHub</div>
+                            <div class="contact-value">See my code</div>
+                        </div>
+                    </a>
+
+                    <div class="card subtle">
+                        <h4>Prefer a quick action?</h4>
+                        <div class="pill-row">
+                            <button class="pill-btn" type="button" data-scroll="#projects"><i class="fa-solid fa-folder-open"></i> Projects</button>
+                            <a class="pill-btn" href="FullStack Resume Final Dnyanada.pdf" download="Dnyanada_Deshkar_CV.pdf"><i class="fa-solid fa-download"></i> Resume</a>
+                            <button class="pill-btn" type="button" data-scroll="#top"><i class="fa-solid fa-arrow-up"></i> Top</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">Dnyanada Deshkar</div>
+                <div class="footer-note">Built with HTML, CSS, and JavaScript • Smooth scroll + animations</div>
+            </div>
+            <div class="footer-right">
+                <a class="icon-btn" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+
 </body>
-
 </html>
-
